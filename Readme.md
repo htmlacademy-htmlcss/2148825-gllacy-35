@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Анастасия  Меденцова](https://up.htmlacademy.ru/htmlcss/35/user/2148825).
-* Наставник: `Неизвестно`.
+* Наставник: [Карина Карапетян](https://htmlacademy.ru/profile/karinaweb).
 
 ---
 

@@ -24,29 +24,28 @@
   </nav>
 </header>
 <main class="main-inner">
-  <header>
-    <div class="path">
       <ul class="path-list">
         <li class="path-item"><a class="path-link" href="index.html">Главная</a></li>
         <li class="path-item"><a class="path-link" href="#">Каталог</a></li>
         <li class="path-item"><a class="path-link" href="#">Сливочное мороженое</a></li>
       </ul>
-    </div>
     <h1 class="visually-hidden">Сливочное мороженое</h1>
-  </header>
+
   <section class="filter">
     <h2 class="visually-hidden">Фильтр</h2>
     <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
-      <fieldset class="catalog-filter-group">
-        <legend class="catalog-filter-title">Сортировка:</legend>
-        <select class="selector-control">
+      <div class="catalog-filter-group">
+        <label class="catalog-filter-title" for="selector">Сортировка:</label>
+        <select class="selector-control" id="selector">
           <option value="popular" >По популярности</option>
           <option value="cheap">По возрастанию цены</option>
           <option value="expensive">По убыванию цены</option>
         </select>
-        <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
-        <input class="filter-range" type="range" min="0" max="500" step="100" >
-<!-- Как сделать два бегунка я нашла только с помощью JS, поэтому пока один -->
+      </div>
+       <fieldset class="price"><legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
+      <input class="filter-range" type="range" min="0" max="500" step="100" >
+       </fieldset>
+      <fieldset class="fat">
         <legend class="catalog-filter-title">Жирность:</legend>
         <ul class="filter-list">
           <li class="filter-item fat">
@@ -57,19 +56,19 @@
           </li>
           <li class="filter-item fat">
             <label class="fat-text">
-              <input class="fat-input" type="radio" name="fat" value="до 10%" checked>
+              <input class="fat-input" type="radio" name="fat" value="less than 10%" checked>
               до 10%
             </label>
           </li>
           <li class="filter-item fat">
           <label class="fat-text">
-            <input class="fat-input" type="radio" name="fat" value="до 30%">
+            <input class="fat-input" type="radio" name="fat" value="less than 30%">
             до 30%
           </label>
         </li>
           <li class="filter-item fat">
           <label class="fat-text">
-            <input class="fat-input" type="radio" name="fat" value="выше 30%">
+            <input class="fat-input" type="radio" name="fat" value="more than 30%">
             выше 30%
           </label>
         </li>
@@ -109,7 +108,7 @@
             </label>
           </li>
         </ul>
-      <button class="button button-form" type="submit">Применить</button>
+      <button class="button-form" type="submit">Применить</button>
       </fieldset>
     </form>
   </section>
@@ -201,37 +200,36 @@
         <a class="hits-item-basket" href="#"><span class="visually-hidden">Добавить в корзину</span></a>
       </li>
     </ul>
-  </section>
-  <section class="pagination">
-    <button class="button pagination-showmore" type="button">Показать ещё</button>
-    <ul class="pagination">
-      <li class="pagination-item">
-        <a class="pagination-link pagination-left pagination-disabled">
-          <!-- на макете странно, вроде стрелка назад неактивна, хотя мы не на первой на 3-ей странице -->
-          <span class="visually-hidden">Предыдущая страница</span>
-        </a>
-      </li>
-      <li class="pagination-item">
-        <a class="pagination-link">1</a>
-      </li>
-      <li class="pagination-item">
-        <a class="pagination-link" href="#">2</a>
-      </li>
-      <li class="pagination-item">
-        <a class="pagination-link current" href="#">3</a>
-      </li>
-      <li class="pagination-item">
-        <a class="pagination-link" href="#">4</a>
-      </li>
-      <li class="pagination-item">
-        <a class="pagination-link" href="#">5</a>
-      </li>
-      <li class="pagination-item">
-        <a class="pagination-link pagination-right" href="#">
-          <span class="visually-hidden">Следующая страница</span>
-        </a>
-      </li>
-    </ul>
+    <section class="pagination">
+      <button class="button pagination-showmore" type="button">Показать ещё</button>
+      <ul class="pagination">
+        <li class="pagination-item">
+          <a class="pagination-link pagination-left pagination-disabled">
+            <span class="visually-hidden">Предыдущая страница</span>
+          </a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link">1</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">2</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link current" href="#">3</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">4</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">5</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link pagination-right" href="#">
+            <span class="visually-hidden">Следующая страница</span>
+          </a>
+        </li>
+      </ul>
+    </section>
   </section>
 </main>
 <footer class="page-footer">

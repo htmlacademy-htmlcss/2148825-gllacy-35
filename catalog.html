@@ -16,20 +16,21 @@
     <div class="navigation-right">
       <a class="navigation-link" href="tel:+78005558628">+7 800 555-86-28</a>
       <ul class="navigation-user-list">
-        <li class="navigation-item navigation-user"><a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a></li>
+        <li class="navigation-item navigation-user"><a class="navigation-link" href="#">
+          <span class="visually-hidden">Поиск</span></a></li>
         <li class="navigation-item navigation-user"><a class="navigation-link" href="#">Вход</a></li>
-        <li class="navigation-item navigation-user"><a class="navigation-link" href="#">2 товара</a></li>
+        <li class="navigation-user-item"><a class="navigation-user-link" href="#" aria-label="Корзина">2 товара</a></li>
       </ul>
     </div>
   </nav>
 </header>
 <main class="main-inner">
-      <ul class="path-list">
-        <li class="path-item"><a class="path-link" href="index.html">Главная</a></li>
-        <li class="path-item"><a class="path-link" href="#">Каталог</a></li>
-        <li class="path-item"><a class="path-link" href="#">Сливочное мороженое</a></li>
-      </ul>
-    <h1 class="visually-hidden">Сливочное мороженое</h1>
+  <ul class="path-list">
+    <li class="path-item"><a class="path-link" href="index.html">Главная</a></li>
+    <li class="path-item"><a class="path-link" href="#">Каталог</a></li>
+    <li class="path-item"><a class="path-link" href="#">Сливочное мороженое</a></li>
+  </ul>
+  <h1 class="visually-hidden">Сливочное мороженое</h1>
 
   <section class="filter">
     <h2 class="visually-hidden">Фильтр</h2>
@@ -37,14 +38,15 @@
       <div class="catalog-filter-group">
         <label class="catalog-filter-title" for="selector">Сортировка:</label>
         <select class="selector-control" id="selector">
-          <option value="popular" >По популярности</option>
+          <option value="popular">По популярности</option>
           <option value="cheap">По возрастанию цены</option>
           <option value="expensive">По убыванию цены</option>
         </select>
       </div>
-       <fieldset class="price"><legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
-      <input class="filter-range" type="range" min="0" max="500" step="100" >
-       </fieldset>
+      <fieldset class="price">
+        <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
+        <input class="filter-range" type="range" min="0" max="500" step="100">
+      </fieldset>
       <fieldset class="fat">
         <legend class="catalog-filter-title">Жирность:</legend>
         <ul class="filter-list">
@@ -61,17 +63,17 @@
             </label>
           </li>
           <li class="filter-item fat">
-          <label class="fat-text">
-            <input class="fat-input" type="radio" name="fat" value="less than 30%">
-            до 30%
-          </label>
-        </li>
+            <label class="fat-text">
+              <input class="fat-input" type="radio" name="fat" value="less than 30%">
+              до 30%
+            </label>
+          </li>
           <li class="filter-item fat">
-          <label class="fat-text">
-            <input class="fat-input" type="radio" name="fat" value="more than 30%">
-            выше 30%
-          </label>
-        </li>
+            <label class="fat-text">
+              <input class="fat-input" type="radio" name="fat" value="more than 30%">
+              выше 30%
+            </label>
+          </li>
         </ul>
       </fieldset>
       <fieldset class="catalog-filter-group">
@@ -108,7 +110,7 @@
             </label>
           </li>
         </ul>
-      <button class="button-form" type="submit">Применить</button>
+        <button class="button-form" type="submit">Применить</button>
       </fieldset>
     </form>
   </section>
@@ -242,7 +244,8 @@
         <a class="button-social" href="https://vk.com/htmlacademy"><span class="visually-hidden">Vkontakte</span></a>
       </li>
       <li>
-        <a class="button-social" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">YouTube</span></a>
+        <a class="button-social" href="https://www.youtube.com/user/htmlacademyru"><span
+          class="visually-hidden">YouTube</span></a>
       </li>
     </ul>
   </div>
@@ -255,7 +258,8 @@
   </div>
   <div class="about">
     <img class="html-logo" src="" alt="Логотип html-academy">
-    <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>© 2021</p>
+    <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>© 2021
+    </p>
   </div>
 </footer>
 </body>

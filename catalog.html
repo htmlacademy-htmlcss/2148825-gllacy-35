@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="styles/styles.css">
   <title>Глейси</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
       <li class="navigation-item"><a class="navigation-link" href="#">О компании</a></li>
     </ul>
 
-    <a class="navigation-link" href="tel:+78005558628">+7 800 555-86-28</a>
+    <a class="navigation-link tel" href="tel:+78005558628">+7 800 555-86-28</a>
     <ul class="navigation-user-list">
       <li class="navigation-user-item"><a class="navigation-user-link" href="#">
         <span class="visually-hidden">Поиск</span></a></li>
@@ -25,12 +26,12 @@
   </nav>
 </header>
 <main class="main-inner">
-  <ul class="path-list">
-    <li class="path-item"><a class="path-link" href="index.html">Главная</a></li>
-    <li class="path-item"><a class="path-link" href="#">Каталог</a></li>
-    <li class="path-item"><a class="path-link" href="#">Сливочное мороженое</a></li>
+  <ul class="breadcrumbs">
+    <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html">Главная</a></li>
+    <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Каталог</a></li>
+    <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Сливочное мороженое</a></li>
   </ul>
-  <h1 class="catalog-title">Сливочное мороженое</h1>
+  <h1 class="inner-title">Сливочное мороженое</h1>
 
   <section class="filter">
     <h2 class="visually-hidden">Фильтр</h2>
@@ -201,7 +202,7 @@
       </li>
     </ul>
     <section class="pagination">
-      <button class="button pagination-showmore" type="button">Показать ещё</button>
+      <button class="button button-white pagination-showmore" type="button">Показать ещё</button>
       <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-left pagination-disabled">

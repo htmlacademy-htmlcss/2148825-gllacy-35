@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="styles/styles.css">
   <title>Глейси</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
       <li class="navigation-item"><a class="navigation-link" href="#">О компании</a></li>
     </ul>
 
-    <a class="navigation-link" href="tel:+78005558628">+7 800 555-86-28</a>
+    <a class="navigation-link tel" href="tel:+78005558628">+7 800 555-86-28</a>
     <ul class="navigation-user-list">
       <li class="navigation-user-item"><a class="navigation-user-link" href="#">
         <span class="visually-hidden">Поиск</span></a></li>
@@ -167,7 +168,7 @@
     <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
       не спамить и не слать всякой ненужной ерунды. Честно =)</p>
     <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-      <label class="visually-hidden" for="newsletter-email">E-mail</label>>
+      <label class="visually-hidden" for="newsletter-email">E-mail</label>
       <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email"
              required>
       <button class="button button-pink" type="submit">
@@ -202,6 +203,7 @@
   </section>
 
   <section class="contacts">
+    <div class="contacts-block">
     <h2 class="contacts-title visually-hidden">Контакты</h2>
     <p>Адрес главного офиса и офлайн-магазина:</p>
     <address class="contacts-address"><p class="address">наб. реки Карповки, 5 лит П, Санкт-Петербург</p></address>
@@ -209,6 +211,7 @@
     <address class="contacts-address"><a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a></address>
     <p>(с 10 до 20 ежедневно)</p>
     <a class="button button-pink" href="#">Форма обратной связи</a>
+    </div>
   </section>
 </main>
 <footer class="page-footer">

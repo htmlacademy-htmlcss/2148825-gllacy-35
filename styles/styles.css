@@ -37,7 +37,15 @@
 }
 **/
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -87,6 +95,32 @@ body {
   border: none;
 }
 
+.navigation {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.navigation-left {
+  display: flex;
+  width: 615px; /* в макете 575px, но учили осталять запас, под запас выделила 40px, как в скринкасте, хотя мне кажется, что этого запаса не хватит */
+}
+
+.navigation-right {
+  display: flex;
+  max-width: 470px; /* в макете 431px*/
+  margin-left: auto;
+}
+
+.logo {
+  display: block; /* чтобы потом задать отступы... Нужно ли это, если потом логотип будет флекс-элементом? */
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+}
+
 .navigation-link {
   line-height: 20px;
   text-align: center;
@@ -107,6 +141,15 @@ body {
   background-color: rgba(252, 252, 252, 0.3);
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
 .slider-title {
   font-size: 36px;
   font-weight: 900;
@@ -116,6 +159,17 @@ body {
 .slider-description {
   font-size: 18px;
   line-height: 24px;
+}
+
+.index-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.gifts-list {
+  margin: 0;
+  padding: 0;
 }
 
 .gifts-title {
@@ -132,8 +186,12 @@ body {
 }
 
 .gifts-item {
+  box-sizing: border-box;
+  width: 570px;
+  padding: 0 32px; /*потом поставить вертикальные*/
   background-color: #FF7799;
 }
+
 .hits-title {
   font-weight: 900;
   font-size: 32px;
@@ -170,6 +228,7 @@ body {
 
 .advantages {
   background-color: #FFFFFF;
+  padding: 0 40px; /*добавить вертикальные*/
 }
 
 .advantages-title {
@@ -187,7 +246,9 @@ body {
 }
 
 .blog {
+  box-sizing: border-box;
   width: 570px;
+  padding: 0 36px; /*потом поставить вертикальные*/
   border-radius: 16px;
   color: inherit;
   background-color: #FFFFFF;
@@ -211,6 +272,9 @@ body {
 }
 
 .newsletter {
+  box-sizing: border-box;
+  width: 570px;
+  padding: 0 36px; /*потом поставить вертикальные*/
   background-color: #FFFFFF;
   font-size: 16px;
   font-weight: 400;
@@ -226,6 +290,8 @@ body {
   background-image: url("../images/background-delivery.jpg");
   background-position: center;
   background-size: 105% auto;
+  box-sizing: border-box;
+  padding: 0 64px; /*Добавить вертикальные*/
 }
 
 .delivery-title {
@@ -236,6 +302,8 @@ body {
 
 .delivery-form {
   background-color: #FCFCFC;
+  width: 500px;
+  margin-left: auto;
 }
 
 .form-label {
@@ -258,6 +326,8 @@ input::placeholder {
   background-image: url("../images/background-contacts.jpg");
   background-position: center;
   background-size: 100% auto;
+  box-sizing: border-box;
+  padding: 0 64px; /*Добавить вертикальные*/
 }
 
 .contacts-block {
@@ -266,6 +336,8 @@ input::placeholder {
   font-weight: 400;
   line-height: 22px;
   color: #565C66;
+  width: 343px;
+  margin-right: auto;
 }
 
 .contacts-address {
@@ -279,6 +351,24 @@ input::placeholder {
 .contacts-phone {
   text-decoration: none;
   color: inherit;
+}
+
+.page-footer-container {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+  padding-left: 4px;
+}
+
+.social-list {
+  max-width: 184px; /* Сделала большой запас на ещё иконки, так как соцсетей очень вероятно может стать больше*/
+  /*Не делала отступов, так как элемент дважды используется на странице*/
+}
+
+.footer-links {
+  width: 356px; /*Без запаса, мне кажется, этот список должен расти вертикально*/
+  margin-right: 200px;
+  margin-left: auto;
 }
 
 .footer-link {
@@ -296,8 +386,8 @@ a.footer-link:first-child {
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
-  letter-spacing: 0em;
-
+  width: 193px;
+  margin-right: 14px;
 }
 
 .htmlacademy-link {

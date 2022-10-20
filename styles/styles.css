@@ -112,15 +112,15 @@ body {
   margin: 0 auto;
 }
 
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+}
+
 .navigation {
   display: flex;
   align-items: center;
-}
-
-.navigation-left {
-  margin: 24px 0;
-  display: flex;
-  width: 615px;
 }
 
 .navigation-right {
@@ -146,6 +146,7 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  width: 450px;
 }
 
 .navigation-link {
@@ -206,7 +207,8 @@ body {
 
 .slider-list {
   list-style-type: none;
-  padding: 0;
+  padding: 20px 0;
+  margin: 0;
   display: flex;
   align-items: center;
 }
@@ -214,6 +216,7 @@ body {
 .slider-pagination {
   list-style-type: none;
   padding: 0;
+  margin: 0;
   display: flex;
 }
 
@@ -248,7 +251,7 @@ body {
 }
 
 .slider-item.active .slider-title {
-  margin: 136px auto 24px 0;
+  margin: 116px auto 24px 0;
   width: 470px;
 }
 
@@ -315,6 +318,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0;
   margin-bottom: -90px; /* это кажется мне очень кривым решением, но ничего лучше не придумала, как обычно делают в таких случаях? к тому же, это бы не сработало, если бы фон контейнера отличался от фона сайта*/
   padding-top: 50px;
 }
@@ -347,11 +351,11 @@ body {
 .hits-item-image {
   border-radius: 50%;
   display: block;
-  margin-top: -50px;
 }
 
 .hits-show-image {
   order: -1;
+  margin-top: -50px;
 }
 
 .hits-show {
@@ -487,7 +491,8 @@ body {
   background-image: url("../images/background-delivery.jpg");
   background-position: center;
   background-size: 105% auto;
-  padding: 64px 64px;
+  padding: 64px;
+  padding-left: 100px;
   display: flex;
   align-content: center;
   justify-content: space-between;
@@ -497,13 +502,18 @@ body {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-  margin: 21px 36px;
+  margin-bottom: 21px;
   width: 360px;
 }
 
 .delivery p {
-  margin: 0 20px;
+  margin: 0px;
   width: 370px;
+  margin-bottom: 21px;
+}
+
+.text-box {
+  margin:  auto 0;
 }
 
 .delivery-form {
@@ -537,7 +547,7 @@ input::placeholder {
   background-image: url("../images/background-contacts.jpg");
   background-position: center;
   background-size: 100% auto;
-  padding: 64px 64px; /*Добавить вертикальные*/
+  padding: 64px;
 }
 
 .contacts-block {
@@ -576,6 +586,7 @@ input::placeholder {
   width: 104px;
   list-style-type: none;
   padding: 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -676,22 +687,24 @@ a.footer-link:first-child {
   background-color: rgba(252, 252, 252, 0.3);
 }
 
-.pagination {
+section.pagination {
   display: flex;
   padding: 41px 0;
+  justify-content: flex-end;
 }
+
 
 .pagination-showmore {
-   margin-left: 487px; /*  margin: 0 auto; здесь не подходит, поэьтому сделал так, не уверена, что это лучший вариант*/
-  margin-right: auto;
+   margin-left: auto;
+  margin-right: 335px;
 }
 
-.pagination ul {
+ul.pagination {
   display: flex;
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-left: auto;
+  width: 168px;
 }
 
 .pagination ul li:last-child {

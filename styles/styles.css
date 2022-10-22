@@ -308,19 +308,21 @@ body {
   margin-bottom: 28px;
 }
 
-.gifts-button  {
+.gifts-button {
   align-self: flex-start;
 }
 
 .hits-list {
   list-style-type: none;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   margin: 0;
-  margin-bottom: -90px; /* это кажется мне очень кривым решением, но ничего лучше не придумала, как обычно делают в таких случаях? к тому же, это бы не сработало, если бы фон контейнера отличался от фона сайта*/
-  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  gap: 30px;
+}
+
+.catalog-list {
+  padding: 16px 0;
 }
 
 .hits-title {
@@ -335,14 +337,14 @@ body {
 
 .hits-item {
   background-color: #FCFCFC;
-  width: 270px;
   border-radius: 8px;
-  margin-bottom: 90px; /* Кажется, чтобы убрать отступ снизу контейнера, nth-child не поможет*/
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 40px 24px;
+  margin-top: 50px;
 }
+
 .hits-item-title {
   margin: 0;
   margin-bottom: 8px;
@@ -397,7 +399,7 @@ body {
 
 .advantages {
   background-color: #FFFFFF;
-  padding: 56px 40px 16px; /*тоже борюсь с нижними отступами, не уверена, что верно*/
+  padding: 56px 40px;
   border-radius: 16px;
 }
 
@@ -413,9 +415,9 @@ body {
 .advantages-list {
   list-style-type: none;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  gap: 40px 32px;
+  grid-template-columns: 505px 505px;
 }
 
 .advantages-item {
@@ -423,8 +425,6 @@ body {
   font-weight: 400;
   line-height: 22px;
   color: #565C66;
-  width: 505px;
-  margin-bottom: 40px;
 }
 
 .blog {
@@ -506,14 +506,14 @@ body {
   width: 360px;
 }
 
-.delivery p {
+.delivery > p {
   margin: 0px;
   width: 370px;
   margin-bottom: 21px;
 }
 
 .text-box {
-  margin:  auto 0;
+  margin: auto 0;
 }
 
 .delivery-form {
@@ -521,11 +521,28 @@ body {
   width: 500px;
   border-radius: 8px;
   padding: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .delivery-form p {
   margin: 0;
-  margin-bottom: 20px;
+}
+
+.delivery-form .form-label {
+  margin-bottom: 8px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-grid-part {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  gap: 20px 16px;
+  padding: 32px 0;
 }
 
 .form-label {
@@ -533,6 +550,14 @@ body {
   font-weight: 700;
   line-height: 20px;
   color: #2D3440;
+}
+
+.delivery-form-address {
+  grid-column: 1 / -1;
+}
+
+.button-form-delivery {
+  margin: 0 auto;
 }
 
 input::placeholder {
@@ -606,12 +631,11 @@ input::placeholder {
 .footer-links {
   width: 356px;
   margin: 0 200px 0 auto;
-  column-count: 2;  /* не получается этот перечень ссылок нормально:
-  1. На флексах с row-направлением не получается выровнить по чётким столбикам
-  2. На флексах с column-направлением выглядит норм, но получается, что список будет наращиваться вбок, а не вниз
-  3. В две колонки мне не попалось адекватного способа сделать их разной ширины (в макете первая короче второй)
-  4. Собираюсь сделать на гридах, но они ведь появились сравнительно недавно, как раньше такое можно было реализовать? */
-  column-gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 8px 24px;
+  justify-content: start;
+  grid-auto-rows: min-content;
 }
 
 .footer-link {
@@ -621,7 +645,7 @@ input::placeholder {
   color: inherit;
   display: block;
   margin: 0;
-  margin-bottom: 8px;
+  padding: 0;
 }
 
 a.footer-link:first-child {
@@ -695,7 +719,7 @@ section.pagination {
 
 
 .pagination-showmore {
-   margin-left: auto;
+  margin-left: auto;
   margin-right: 335px;
 }
 
@@ -708,7 +732,7 @@ ul.pagination {
 }
 
 .pagination ul li:last-child {
- margin-left: 8px;
+  margin-left: 8px;
 }
 
 .pagination ul li:first-child {

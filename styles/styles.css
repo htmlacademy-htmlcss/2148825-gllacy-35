@@ -353,6 +353,10 @@ body {
   gap: 80px;
 }
 
+.slider {
+  position: relative;
+}
+
 .slider-title {
   font-size: 36px;
   font-weight: 900;
@@ -431,6 +435,7 @@ body {
   padding: 9px;
   outline: 2px solid #FCFCFC;
   z-index: 1;
+  position: absolute;
 }
 
 .slider-button:hover {
@@ -467,12 +472,12 @@ body {
 }
 
 .slider-left {
-  margin-right: -19px;
+  left: 523px;
   transform: scale(-1);
 }
 
 .slider-right {
-  margin-left: -19px;
+  right: 302px;
 }
 
 .slider-item {
@@ -513,7 +518,7 @@ body {
   height: 312px;
   position: absolute;
   top: 97px;
-  background-color: #FFCBD8;
+  background-color: rgba(252, 252, 252, 0.4);
   border-radius: 50%;
   z-index: -1;
 }
@@ -524,7 +529,7 @@ body {
   height: 100px;
   position: absolute;
   top: 25px;
-  background-color: #FFCBD8;
+  background-color:  rgba(252, 252, 252, 0.4);
   border-radius: 50%;
   z-index: -1;
 }
@@ -701,7 +706,7 @@ body {
   min-height: 16px;
   color: #FCFCFC;
   background-color: #FF2F64;
-  padding: 8px; /*не нравится мне это*/
+  padding: 8px;
   border-radius: 50%;
   position: relative;
 }

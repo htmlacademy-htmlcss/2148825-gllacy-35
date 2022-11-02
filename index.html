@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="styles/styles.css">
@@ -10,7 +10,7 @@
   <header class="page-header">
     <nav class="navigation container">
       <a class="logo-link" href="#"><img class="logo" src="images/logo.svg" alt="Логотип Gllacy Shop" width="137"
-                                         height="55.72"></a>
+                                         height="56"></a>
       <ul class="navigation-list">
         <li class="navigation-item"><a class="navigation-link" href="catalog.html">Каталог
           <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16"
@@ -93,25 +93,25 @@
                                                alt="Рожок карамельного мороженого, украшенный листочком мяты"
                                                width="306" height="507"></div>
         </li>
-        <button class="slider-button slider-left" type="button">
-          <svg class="slider-button-icon" aria-hidden="true" focusable="false" width="16" height="16"
-               viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z"
-                  fill="currentColor"/>
-          </svg>
-          <span class="visually-hidden">Предыдущее фото</span>
-        </button>
-        <button class="slider-button slider-right" type="button">
-          <svg class="slider-button-icon" aria-hidden="true" focusable="false" width="16" height="16"
-               viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z"
-                  fill="currentColor"/>
-          </svg>
-          <span class="visually-hidden">Следующее фото</span>
-        </button>
       </ol>
+      <button class="slider-button slider-left" type="button">
+        <svg class="slider-button-icon" aria-hidden="true" focusable="false" width="16" height="16"
+             viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z"
+                fill="currentColor"/>
+        </svg>
+        <span class="visually-hidden">Предыдущее фото</span>
+      </button>
+      <button class="slider-button slider-right" type="button">
+        <svg class="slider-button-icon" aria-hidden="true" focusable="false" width="16" height="16"
+             viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z"
+                fill="currentColor"/>
+        </svg>
+        <span class="visually-hidden">Следующее фото</span>
+      </button>
       <div class="slider-footer">
         <ol class="slider-pagination">
           <li class="slider-pagination-button">
@@ -262,9 +262,9 @@
           не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletter-email">E-mail</label>
-          <input class="field-email" placeholder="email@example.com" type="email" name="newsletter-email"
-                 id="newsletter-email"
-                 required>
+          <input class="field field-email" placeholder="email@example.com" type="email" name="newsletter-email"
+                 id="newsletter-email">
+          <!-- Если оставить required, то сразу применяется состояние invalid, мне кажется, так не должно быть-->
           <button class="button button-pink" type="submit">
             Отправить
           </button>
@@ -283,23 +283,22 @@
         <p class="delivery-info">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
         <div class="form-grid-part">
           <p class="field-group delivery-form-date">
-            <label class="form-label" for="delivery-date">Дата
-              <button class="info">
-                <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
-            </label>
-            <input class="form-input" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
+            <span class="form-label-tooltip"><label class="form-label" for="delivery-date">Дата</label>
+            <span class="tooltip"><button class="tooltip-toggle">
+              <span class="visually-hidden">Посмотреть дополнительную информацию</span></button></span></span>
+            <input class="field" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
           </p>
           <p class="field-group delivery-form-phone">
             <label class="form-label" for="delivery-phone">Телефон</label>
-            <input class="form-input" type="tel" id="delivery-phone" name="delivery-phone"
+            <input class="field" type="tel" id="delivery-phone" name="delivery-phone"
                    placeholder="+7 800 999-00-00">
           </p>
           <p class="field-group delivery-form-address">
-            <label class="form-label" for="delivery-address">Адрес
-              <button class="info">
-                <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
+            <span class="form-label-tooltip"><label class="form-label" for="delivery-address">Адрес
             </label>
-            <input class="form-input" type="text" id="delivery-address" name="delivery-address"
+            <span class="tooltip"><button class="tooltip-toggle">
+              <span class="visually-hidden">Посмотреть дополнительную информацию</span></button></span></span>
+            <input class="field" type="text" id="delivery-address" name="delivery-address"
                    placeholder="ул. Большая Конюшенная, 19/8">
           </p>
         </div>
@@ -345,7 +344,7 @@
       <a class="footer-link" href="#">Экологические стандарты</a>
     </div>
     <div class="about">
-      <img class="html-logo" src="images/logo-htmlacademy.svg" alt="Логотип html-academy" width="93" height="26.71">
+      <img class="html-logo" src="images/logo-htmlacademy.svg" alt="Логотип html-academy" width="93" height="27">
       <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>© 2021
       </p>
     </div>

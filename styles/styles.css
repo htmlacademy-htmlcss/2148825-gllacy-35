@@ -95,73 +95,73 @@ body {
 .button-white {
   color: #2D3440;
   background-color: #FCFCFC;
-  outline: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0 0 0 4px rgba(252, 252, 252, 0.4), 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .button-white:hover {
   background-color: rgba(252, 252, 252, 0.4);
-  outline: 4px solid rgba(252, 252, 252, 1);
+  box-shadow: 0 0 0 4px rgba(252, 252, 252, 1), 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .button-white:focus {
   background-color: rgba(252, 252, 252, 0.4);
-  outline: 2px solid #2D3440;
+  box-shadow: 0 0 0 4px #2D3440, 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .button-white:active {
   background-color: #FCFCFC;
-  outline: 2px solid #2D3440;
+  box-shadow: 0 0 0 2px #2D3440, 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .button-white:disabled {
   color: #B9B9B9;
   background-color: #E7E7E7;
-  outline: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0 0 0 4px rgba(252, 252, 252, 0.4), 0 4px 12px rgba(45, 52, 64, 0.1);
   font-weight: 400;
 }
 
 .button-white.disabled {
   color: #B9B9B9;
   background-color: #E7E7E7;
-  outline: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0 0 0 4px rgba(252, 252, 252, 0.4), 0 4px 12px rgba(45, 52, 64, 0.1);
   font-weight: 400;
 }
 
 .button-pink {
   color: #FCFCFC;
   background-color: #FF2F64;
-  outline: 4px solid rgba(255, 47, 100, 0.3);
+  box-shadow: 0 0 0 4px rgba(255, 47, 100, 0.3), 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .button-pink:hover {
   color: #2D3440;
   background-color: rgba(252, 252, 252, 0.3);
-  outline: 4px solid rgba(255, 47, 100, 1);
+  box-shadow: 0 0 0 4px rgba(255, 47, 100, 1), 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .button-pink:focus {
   color: #FCFCFC;
   background-color: #FF2F64;
-  outline: 2px solid #2D3440;
+  box-shadow: 0 0 0 2px #2D3440, 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .button-pink:active {
   background-color: #FEAFC3;
   color: #FCFCFC;
-  outline: 2px solid #2D3440;
+  box-shadow: 0 0 0 2px #2D3440, 0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .button-pink:disabled {
   background-color: #B9B9B9;
   color: #565C66;
-  outline: 4px solid rgba(185, 185, 185, 0.3);
+  box-shadow: 0 0 0 4px rgba(185, 185, 185, 0.3), 0 4px 12px rgba(45, 52, 64, 0.1);
   font-weight: 400;
 }
 
 .button-pink.disabled {
   background-color: #B9B9B9;
   color: #565C66;
-  outline: 4px solid rgba(185, 185, 185, 0.3);
+  box-shadow: 0 0 0 4px rgba(185, 185, 185, 0.3), 0 4px 12px rgba(45, 52, 64, 0.1);
   font-weight: 400;
 }
 
@@ -176,31 +176,31 @@ body {
   padding: 8px 52.5px;
   border-radius: 20px;
   border: none;
-  outline: 2px solid #FCFCFC;
+  box-shadow: 0 0 0 2px #FCFCFC;
   align-self: flex-end;
   cursor: pointer;
 }
 
 .button-form:hover {
   background-color: #FCFCFC;
-  outline: 2px solid rgba(252, 252, 252, 0.3);
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
 }
 
 .button-form:focus {
   background-color: rgba(252, 252, 252, 0.3);
-  outline: 2px solid #2D3440;
+  box-shadow: 0 0 0 2px #2D3440;
 }
 
 .button-form:active {
   background-color: rgba(252, 252, 252, 0.3);
-  outline: none;
+  box-shadow: none;
 }
 
 .button-form:disabled {
   background-color: rgba(252, 252, 252, 0.3);
   color: inherit;
   border: none;
-  outline: 2px solid #FCFCFC;
+  box-shadow: 0 0 0 2px #FCFCFC;
   opacity: 40%;
 }
 
@@ -208,7 +208,7 @@ body {
   background-color: rgba(252, 252, 252, 0.3);
   color: inherit;
   border: none;
-  outline: 2px solid #FCFCFC;
+  box-shadow: 0 0 0 2px #FCFCFC;
   opacity: 40%;
 }
 
@@ -335,17 +335,17 @@ body {
 
 .navigation-link:hover {
   background-color: rgba(252, 252, 252, 0.5);
-  outline: none;
+  box-shadow: none;
 }
 
 .navigation-link:focus {
   background-color: rgba(252, 252, 252, 0.5);
-  outline: 2px solid #2D3440;
+  box-shadow: 0 0 0 2px #2D3440;
 }
 
 .navigation-link:active {
   background-color: rgba(252, 252, 252, 1);
-  outline: none;
+  box-shadow: none;
 }
 
 .navigation-user-link:hover {
@@ -354,12 +354,12 @@ body {
 
 .navigation-user-link:focus {
   background-color: rgba(252, 252, 252, 1);
-  outline: none;
+  box-shadow: none;
 }
 
 .navigation-user-link:active {
   background-color: rgba(252, 252, 252, 0.5);
-  outline: 2px solid #2D3440;
+  box-shadow: 0 0 0 2px #2D3440;
 }
 
 .main-container {
@@ -421,7 +421,6 @@ body {
   padding: 0;
   display: block;
   cursor: pointer;
-  outline: none;
 }
 
 .button-pagination:hover {
@@ -436,7 +435,7 @@ body {
 
 .button-pagination:active {
   background-color: rgba(252, 252, 252, 0.5);
-  barder: none;
+  border: none;
 }
 
 .button-pagination.current {
@@ -453,7 +452,7 @@ body {
   cursor: pointer;
   border: none;
   padding: 9px;
-  outline: 2px solid #FCFCFC;
+  box-shadow: 0 0 0 2px #FCFCFC;
   z-index: 1;
   position: absolute;
   top: 258px;
@@ -462,26 +461,26 @@ body {
 .slider-button:hover {
   color: #2D3440;
   background-color: #FCFCFC;
-  outline: 2px solid #FCFCFC;
+  box-shadow: 0 0 0 2px #FCFCFC;
 }
 
 .slider-button:focus {
   color: #2D3440;
   background-color: rgba(252, 252, 252, 0.3);
-  outline: 2px solid #2D3440;
+  box-shadow: 0 0 0 2px #2D3440;
 }
 
 .slider-button:active {
   color: #2D3440;
   background-color: rgba(252, 252, 252, 0.3);
-  outline: 2px solid rgba(252, 252, 252, 0.3);
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
 }
 
 .slider-button:disabled {
   background-color: rgba(252, 252, 252, 0.3);
   color: #FCFCFC;
   border: none;
-  outline: 2px solid #FCFCFC;
+  box-shadow: 0 0 0 2px #FCFCFC;
   opacity: 40%;
 }
 
@@ -736,20 +735,20 @@ body {
 .hits-item-basket:hover {
   color: #2D3440;
   background-color: rgba(252, 252, 252, 0.3);
-  outline: 2px solid rgba(255, 47, 100, 1);
+  box-shadow: 0 0 0 2px rgba(255, 47, 100, 1);
   cursor: pointer;
 }
 
 .hits-item-basket:focus {
   color: #FCFCFC;
   background-color: #FF2F64;
-  outline: 2px solid #2D3440;
+  box-shadow: 0 0 0 2px #2D3440;
 }
 
 .hits-item-basket:active {
   background-color: #FEAFC3;
   color: #FCFCFC;
-  outline: 2px solid rgba(255, 47, 100, 1);
+  box-shadow: 0 0 0 2px rgba(255, 47, 100, 1);
 }
 
 .hits-item-basket.disabled {
@@ -963,7 +962,6 @@ body {
   padding: 0;
   font: inherit;
   cursor: pointer;
-  outline: inherit;
   position: absolute;
   top: 3px;
   left: 0;
@@ -1021,7 +1019,7 @@ body {
 }
 
 .field:focus {
- outline: 2px solid #2D3440;
+  box-shadow: 0 0 0 2px #2D3440;
 }
 
 
@@ -1085,7 +1083,7 @@ body {
 
 .contacts-phone {
   text-decoration: none;
-  color: inherit;
+  color: #2D3440;
   margin: 10px 0 0;
 }
 
@@ -1120,23 +1118,23 @@ body {
 .button-social {
   display: block;
   border-radius: 50%;
-  outline: 2px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.4);
   cursor: pointer;
 }
 
 .button-social:hover {
   background-color: #2D3440;
-  outline: 2px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.4);
 }
 
 .button-social:focus {
   background-color: #2D3440;
-  outline: 2px solid #2D3440;
+  box-shadow: 0 0 0 2px #2D3440;
 }
 
 .button-social:active {
   background-color: #2D3440;
-  outline: 2px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.4);
   opacity: 50%;
 }
 
@@ -1362,7 +1360,7 @@ a.footer-link:first-child::before {
 .range-toggle:focus {
   background-color: rgba(45, 52, 64, 1);
   border: 6px solid rgba(252, 252, 252, 1);
-  outline: 2px solid rgba(45, 52, 64, 1);
+  box-shadow: 0 0 0 2px rgba(45, 52, 64, 1);
 }
 
 .range-toggle:active {
@@ -1533,12 +1531,12 @@ ul.pagination {
 
 .pagination-link:focus {
   background-color: rgba(252, 252, 252, 0.5);
-  outline: 1px solid #2D3440;
+  box-shadow: 0 0 0 1px #2D3440;
 }
 
 .pagination-link:active {
   background-color: rgba(252, 252, 252, 0.5);
-  outline: 1px solid rgba(252, 252, 252, 1);
+  box-shadow: 0 0 0 1px rgba(252, 252, 252, 1);
 }
 
 .pagination-arrow {

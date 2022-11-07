@@ -14,7 +14,9 @@
       <a class="logo-link" href="index.html"><img class="logo" src="images/logo.svg" alt="Логотип Gllacy Shop"
                                                   width="137" height="56"></a>
       <ul class="navigation-list">
-        <li class="navigation-item"><a class="navigation-link" href="#">Каталог
+        <li class="navigation-item">
+          <!-- Когда открыт popover-submenu, к navigation-link следует добавить класс opened-->
+          <a class="navigation-link" href="#">Каталог
           <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16"
                xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -22,9 +24,11 @@
                   fill="currentColor"/>
           </svg>
         </a>
+          <!-- Для открытия поповера нужно добавить класс popover-open -->
           <div class="popover popover-submenu">
             <h2 class="submenu-title">Новинки</h2>
             <ul class="submenu-list">
+              <!-- Для выделения ссылки текущей страницы предусмотрен класс current к submenu-link -->
               <li class="submenu-item"><a class="submenu-link current" href="#">Сливочное</a></li>
               <li class="submenu-item"><a class="submenu-link" href="#">Щербеты</a></li>
               <li class="submenu-item"><a class="submenu-link" href="#">Фруктовый лед</a></li>
@@ -38,7 +42,9 @@
       <div class="navigation-right">
         <a class="navigation-link-tel" href="tel:+78005558628">+7 800 555-86-28</a>
         <ul class="navigation-user-list">
-          <li class="navigation-user-item"><a class="navigation-user-link search" href="#">
+          <li class="navigation-user-item">
+            <!-- Когда открыт popover-search, к navigation-user-link следует добавить класс opened-->
+            <a class="navigation-user-link search" href="#">
             <svg class="navigation-user-icon only-icon" aria-hidden="true" focusable="false" width="16" height="16"
                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -46,15 +52,19 @@
                     fill="currentColor"/>
             </svg>
             <span class="visually-hidden">Поиск</span></a>
+            <!-- Для открытия поповера нужно добавить класс popover-open -->
             <div class="popover popover-search">
               <form class="popover-search-form">
                 <label class="visually-hidden" for="search-input">Поиск по сайту</label>
                 <input class="search-field" id="search-input" placeholder="Поиск по сайту" autofocus>
-                <button class="search-reset-button" type="reset"><span class="visually-hidden">Закрыть</span></button>
+                <button class="search-reset-button" type="reset"><span class="visually-hidden">Очистить поле</span></button>
+                <button class="visually-hidden" type="submit"><span>Отправить запрос</span></button>
               </form>
             </div>
           </li>
-          <li class="navigation-user-item"><a class="navigation-user-link" href="#">
+          <li class="navigation-user-item">
+            <!-- Когда открыт popover-login, к navigation-user-link следует добавить класс opened-->
+            <a class="navigation-user-link" href="#">
             <svg class="navigation-user-icon" aria-hidden="true" focusable="false" width="16" height="16"
                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -62,6 +72,7 @@
                     fill="currentColor"/>
             </svg>
             Вход</a>
+            <!-- Для открытия поповера нужно добавить класс popover-open -->
             <div class="popover popover-login">
               <h2 class="popover-title">Личный кабинет</h2>
               <form class="popover-login-form">
@@ -83,7 +94,9 @@
               </form>
             </div>
           </li>
-          <li class="navigation-user-item"><a class="navigation-user-link" href="#" aria-label="Корзина">
+          <li class="navigation-user-item">
+            <!-- Когда открыт popover-cart-full или popover-cart-empty, к navigation-user-link следует добавить класс opened-->
+            <a class="navigation-user-link" href="#" aria-label="Корзина">
             <svg class="navigation-user-icon" aria-hidden="true" focusable="false" width="16" height="16"
                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -91,6 +104,7 @@
                     fill="currentColor"/>
             </svg>
             2 товара</a>
+            <!-- Для открытия поповера нужно добавить класс popover-open -->
             <div class="popover popover-cart-full">
               <div class="popover-cart-content">
                 <h2 class="popover-title">Корзина</h2>
@@ -118,9 +132,11 @@
                 </ul>
               </div>
               <div class="cart-footer">
+                <!--Для неактивной ссылки предусмотрен класс disabled-->
                 <a class="button button-pink to-buy">Оформить заказ</a>
                 <span class="cart-total-cost">Итого: 790 ₽</span></div>
             </div>
+            <!-- Для открытия поповера нужно добавить класс popover-open -->
             <div class="popover popover-cart-empty">
               <h2 class="popover-title visually-hidden">Корзина</h2>
               <p>Ваша корзина пока пуста</p>
@@ -163,7 +179,7 @@
           </div>
           <div class="range field-wrapper">
             <div class="range-scale">
-              <div class="range-bar" style="left: 32px; width: 64px">
+              <div class="range-bar" style="left: 33px; width: 72px">
                 <button type="button" class="range-toggle toggle-min">
                   <span class="visually-hidden">Изменить минимальную цену</span>
                 </button>
@@ -303,7 +319,6 @@
           </ul>
         </fieldset>
         <button class="button-form" type="submit">Применить</button>
-        <!--Вынесла кнопку из fieldset, так как она относится ко всей форме -->
       </form>
     </section>
     <section class="catalog">
@@ -315,6 +330,7 @@
           <a class="hits-show-image" href="#"><img class="hits-item-image" src="images/catalog/product-1.jpg" alt=""
                                                    width="168" height="168"></a>
           <div class="hits-item-flex"><b class="price">310 ₽/кг</b>
+            <!--Для неактивной ссылки предусмотрен класс disabled-->
             <a class="hits-item-basket" href="#">
               <svg class="hits-item-basket-icon" aria-hidden="true" focusable="false" width="16" height="16"
                    viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -330,6 +346,7 @@
           <a class="hits-show-image" href="#"><img class="hits-item-image" src="images/catalog/product-2.jpg" alt=""
                                                    width="168" height="168"></a>
           <div class="hits-item-flex"><b class="price">340 ₽/кг</b>
+            <!--Для неактивной ссылки предусмотрен класс disabled-->
             <a class="hits-item-basket" href="#">
               <svg class="hits-item-basket-icon" aria-hidden="true" focusable="false" width="16" height="16"
                    viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -341,10 +358,11 @@
         </li>
         <li class="hits-item">
           <a class="hits-show" href="#"><h3 class="hits-item-title">Черника</h3></a>
-          <p class="hits-item-description">Крем-брюле с черничным джемом</p>
+          <p class="hits-item-description">Крем-брюле <br>с черничным джемом</p>
           <a class="hits-show-image" href="#"><img class="hits-item-image" src="images/catalog/product-3.jpg" alt=""
                                                    width="168" height="168"></a>
           <div class="hits-item-flex"><b class="price">330 ₽/кг</b>
+            <!--Для неактивной ссылки предусмотрен класс disabled-->
             <a class="hits-item-basket" href="#">
               <svg class="hits-item-basket-icon" aria-hidden="true" focusable="false" width="16" height="16"
                    viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -356,10 +374,11 @@
         </li>
         <li class="hits-item">
           <a class="hits-show" href="#"><h3 class="hits-item-title">Бабл-гам</h3></a>
-          <p class="hits-item-description">Ванильный пломбир со сладкой посыпкой</p>
+          <p class="hits-item-description">Ванильный пломбир <br>со сладкой посыпкой</p>
           <a class="hits-show-image" href="#"><img class="hits-item-image" src="images/catalog/product-4.jpg" alt=""
                                                    width="168" height="168"></a>
           <div class="hits-item-flex"><b class="price">320 ₽/кг</b>
+            <!--Для неактивной ссылки предусмотрен класс disabled-->
             <a class="hits-item-basket" href="#">
               <svg class="hits-item-basket-icon" aria-hidden="true" focusable="false" width="16" height="16"
                    viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -375,6 +394,7 @@
           <a class="hits-show-image" href="#"><img class="hits-item-image" src="images/catalog/product-5.jpg" alt=""
                                                    width="168" height="168"></a>
           <div class="hits-item-flex"><b class="price">330 ₽/кг</b>
+            <!--Для неактивной ссылки предусмотрен класс disabled-->
             <a class="hits-item-basket" href="#">
               <svg class="hits-item-basket-icon" aria-hidden="true" focusable="false" width="16" height="16"
                    viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -386,10 +406,11 @@
         </li>
         <li class="hits-item">
           <a class="hits-show" href="#"><h3 class="hits-item-title">Банан</h3></a>
-          <p class="hits-item-description">Сливочный пломбир с банановым вкусом</p>
+          <p class="hits-item-description">Сливочный пломбир <br>с банановым вкусом</p>
           <a class="hits-show-image" href="#"><img class="hits-item-image" src="images/catalog/product-6.jpg" alt=""
                                                    width="168" height="168"></a>
           <div class="hits-item-flex"><b class="price">340 ₽/кг</b>
+            <!--Для неактивной ссылки предусмотрен класс disabled-->
             <a class="hits-item-basket" href="#">
               <svg class="hits-item-basket-icon" aria-hidden="true" focusable="false" width="16" height="16"
                    viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -405,6 +426,7 @@
           <a class="hits-show-image" href="#"><img class="hits-item-image" src="images/catalog/product-7.jpg" alt=""
                                                    width="168" height="168"></a>
           <div class="hits-item-flex"><b class="price">270 ₽/кг</b>
+            <!--Для неактивной ссылки предусмотрен класс disabled-->
             <a class="hits-item-basket" href="#">
               <svg class="hits-item-basket-icon" aria-hidden="true" focusable="false" width="16" height="16"
                    viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -416,10 +438,11 @@
         </li>
         <li class="hits-item">
           <a class="hits-show" href="#"><h3 class="hits-item-title">Клубничка</h3></a>
-          <p class="hits-item-description">Сливочный пломбир с клубничным вкусом</p>
+          <p class="hits-item-description">Сливочный пломбир <br>с клубничным вкусом</p>
           <a class="hits-show-image" href="#"><img class="hits-item-image" src="images/catalog/product-8.jpg" alt=""
                                                    width="168" height="168"></a>
           <div class="hits-item-flex"><b class="price">300 ₽/кг</b>
+            <!--Для неактивной ссылки предусмотрен класс disabled-->
             <a class="hits-item-basket" href="#">
               <svg class="hits-item-basket-icon" aria-hidden="true" focusable="false" width="16" height="16"
                    viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -435,6 +458,7 @@
           <a class="hits-show-image" href="#"><img class="hits-item-image" src="images/catalog/product-9.jpg" alt=""
                                                    width="168" height="168"></a>
           <div class="hits-item-flex"><b class="price">310 ₽/кг</b>
+            <!--Для неактивной ссылки предусмотрен класс disabled-->
             <a class="hits-item-basket" href="#">
               <svg class="hits-item-basket-icon" aria-hidden="true" focusable="false" width="16" height="16"
                    viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -446,10 +470,11 @@
         </li>
         <li class="hits-item">
           <a class="hits-show" href="#"><h3 class="hits-item-title">Ментол</h3></a>
-          <p class="hits-item-description">Сливочный пломбир с ментоловым сиропом</p>
+          <p class="hits-item-description">Сливочный пломбир<br> с ментоловым сиропом</p>
           <a class="hits-show-image" href="#"><img class="hits-item-image" src="images/catalog/product-10.jpg" alt=""
                                                    width="168" height="168"></a>
           <div class="hits-item-flex"><b class="price">320 ₽/кг</b>
+            <!--Для неактивной ссылки предусмотрен класс disabled-->
             <a class="hits-item-basket" href="#">
               <svg class="hits-item-basket-icon" aria-hidden="true" focusable="false" width="16" height="16"
                    viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -465,6 +490,7 @@
           <a class="hits-show-image" href="#"><img class="hits-item-image" src="images/catalog/product-11.jpg" alt=""
                                                    width="168" height="168"></a>
           <div class="hits-item-flex"><b class="price">360 ₽/кг</b>
+            <!--Для неактивной ссылки предусмотрен класс disabled-->
             <a class="hits-item-basket" href="#">
               <svg class="hits-item-basket-icon" aria-hidden="true" focusable="false" width="16" height="16"
                    viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -476,10 +502,11 @@
         </li>
         <li class="hits-item">
           <a class="hits-show" href="#"><h3 class="hits-item-title">Крем-брюле</h3></a>
-          <p class="hits-item-description">Классическое крем-брюле</p>
+          <p class="hits-item-description">Классическое <br>крем-брюле</p>
           <a class="hits-show-image" href="#"><img class="hits-item-image" src="images/catalog/product-12.jpg" alt=""
                                                    width="168" height="168"></a>
           <div class="hits-item-flex"><b class="price">280 ₽/кг</b>
+            <!--Для неактивной ссылки предусмотрен класс disabled-->
             <a class="hits-item-basket" href="#">
               <svg class="hits-item-basket-icon" aria-hidden="true" focusable="false" width="16" height="16"
                    viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -494,11 +521,12 @@
         <button class="button button-white pagination-showmore" type="button">Показать ещё</button>
         <ul class="pagination-list">
           <li class="pagination-item">
+            <!--Для неактивной ссылки предусмотрен класс disabled-->
             <a class="pagination-arrow pagination-left disabled">
-              <!--Сейчас подумала, что хоть и на другую страницу ведёт, но, возможно, это всё-таки кнопка? -->
               <span class="visually-hidden">Предыдущая страница</span>
             </a>
           </li>
+          <!-- Для выделения ссылки текущей страницы предусмотрен класс current к pagination-link -->
           <li class="pagination-item">
             <a class="pagination-link current" href="#">1</a>
           </li>
@@ -515,6 +543,7 @@
             <a class="pagination-link" href="#">5</a>
           </li>
           <li class="pagination-item">
+            <!--Для неактивной ссылки предусмотрен класс disabled-->
             <a class="pagination-arrow pagination-right" href="#">
               <span class="visually-hidden">Следующая страница</span>
             </a>

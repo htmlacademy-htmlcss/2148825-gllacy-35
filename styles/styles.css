@@ -1274,6 +1274,7 @@ body {
   margin: 0;
   padding: 14px 16px;
 
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -1315,8 +1316,8 @@ body {
   margin: 0;
   margin-bottom: 23px;
 
-  font-weight: 900;
   font-size: 32px;
+  font-weight: 900;
   line-height: 46px;
 
   word-break: break-word;
@@ -1408,11 +1409,48 @@ body {
   margin: 0 auto;
 }
 
-.field::-webkit-input-placeholder,
-.field::-moz-placeholder,
-.field:-ms-input-placeholder,
-.field::-ms-input-placeholder,
+.field::-webkit-input-placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #b9b9b9;
+
+  opacity: 100%;
+}
+
+.field::-moz-placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #b9b9b9;
+
+  opacity: 100%;
+}
+
+.field:-ms-input-placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #b9b9b9;
+
+  opacity: 100%;
+}
+
+.field::-ms-input-placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #b9b9b9;
+
+  opacity: 100%;
+}
+
 .field::placeholder {
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -1737,8 +1775,9 @@ a.footer-link:first-child::before {
 }
 
 .filter {
-  margin-bottom: 33px;
+  margin-bottom: 31px;
 
+  font-family: inherit;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -1750,7 +1789,7 @@ a.footer-link:first-child::before {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 18px 24px;
+  gap: 20px 24px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1790,6 +1829,7 @@ a.footer-link:first-child::before {
 
 .selector-control {
   font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
   line-height: 20px;
   color: inherit;
@@ -1831,7 +1871,7 @@ a.footer-link:first-child::before {
 }
 
 .selector-control.field-wrapper {
-  padding: 9px 36px 9px 16px;
+  padding: 8px 29px 8px 16px;
 }
 
 .range-scale {
@@ -2079,7 +2119,7 @@ a.footer-link:first-child::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 168px;
+  width: 169px;
   margin: 0;
   padding: 0;
 
@@ -2104,6 +2144,7 @@ a.footer-link:first-child::before {
   display: block;
   padding: 1px 7px;
 
+  line-height: 20px;
   color: #2d3440;
   text-decoration: none;
 
@@ -2433,22 +2474,40 @@ a.footer-link:first-child::before {
   word-break: break-word;
 }
 
-.popover-login-form .field::-webkit-input-placeholder,
-.popover-login-form .field::-moz-placeholder,
-.popover-login-form .field:-ms-input-placeholder,
-.popover-login-form .field::-ms-input-placeholder,
-.popover-login-form .field::placeholder {
+.popover-login-form .field::-webkit-input-placeholder {
+  font: inherit;
   color: #2d3440;
 
-  opacity: 1;
+  opacity: 100%;
 }
 
-.popover-password-input::-webkit-input-placeholder,
-.popover-password-input::-moz-placeholder,
-.popover-password-input:-ms-input-placeholder,
-.popover-password-input::-ms-input-placeholder,
-.popover-password-input::placeholder {
-  letter-spacing: 2px;
+.popover-login-form .field::-moz-placeholder {
+  font: inherit;
+  color: #2d3440;
+
+  opacity: 100%;
+}
+
+.popover-login-form .field:-ms-input-placeholder {
+  font: inherit;
+  color: #2d3440;
+
+  opacity: 100%;
+}
+
+.popover-login-form .field::-ms-input-placeholder {
+  font: inherit;
+  color: #2d3440;
+
+  opacity: 100%;
+}
+
+.popover-login-form .field::placeholder
+{
+  font: inherit;
+  color: #2d3440;
+
+  opacity: 100%;
 }
 
 /* Поповер-поиск*/
@@ -2470,8 +2529,14 @@ a.footer-link:first-child::before {
   border-radius: 4px;
 }
 
-.search-field:-moz-placeholder-shown ~ .search-reset-button,
-.search-field:-ms-input-placeholder ~ .search-reset-button,
+.search-field:-moz-placeholder-shown ~ .search-reset-button {
+  display: none;
+}
+
+.search-field:-ms-input-placeholder ~ .search-reset-button {
+  display: none;
+}
+
 .search-field:placeholder-shown ~ .search-reset-button {
   display: none;
 }

@@ -16,7 +16,7 @@
       <ul class="navigation-list">
         <li class="navigation-item">
           <!-- Когда открыт popover-submenu, к navigation-link следует добавить класс opened-->
-          <a class="navigation-link" href="#">Каталог
+          <a class="navigation-link toggle-submenu" href="#">Каталог
           <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16"
                xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -81,7 +81,7 @@
           </li>
           <li class="navigation-user-item">
             <!-- Когда открыт popover-login, к navigation-user-link следует добавить класс opened-->
-            <a class="navigation-user-link" href="#">
+            <a class="navigation-user-link toggle-login" href="#">
             <svg class="navigation-user-icon" aria-hidden="true" focusable="false" width="16" height="16"
                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -121,7 +121,7 @@
           </li>
           <li class="navigation-user-item">
             <!-- Когда открыт popover-cart-full или popover-cart-empty, к navigation-user-link следует добавить класс opened-->
-            <a class="navigation-user-link" href="#" aria-label="Корзина">
+            <a class="navigation-user-link toggle-cart" href="#" aria-label="Корзина">
             <svg class="navigation-user-icon" aria-hidden="true" focusable="false" width="16" height="16"
                  viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -684,6 +684,7 @@
     </div>
   </footer>
 </div>
+<script type="text/javascript" src="scripts/app.js"></script>
 </body>
 </html>
 

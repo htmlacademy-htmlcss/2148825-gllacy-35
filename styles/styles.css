@@ -699,7 +699,7 @@ body {
   box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
 }
 
-.slider-button:disabled {
+.slider-button.disabled {
   color: #fcfcfc;
 
   background-color: rgba(252, 252, 252, 0.3);
